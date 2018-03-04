@@ -1,0 +1,18 @@
+# PyCharm
+.idea/
+
+# Compiled python files
+*.py[cod]
+
+# Translated files
+*.mo
+*.pot
+
+# Config directory
+conf/**
+
+# db.sqlite
+db.sqlite3
+
+# dir
+csv/
