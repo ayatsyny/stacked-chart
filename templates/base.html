@@ -1,0 +1,27 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    {% block js %}
+        <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'js/highcharts.js' %}"></script>
+    {% endblock %}
+
+{% block chart %}
+{% endblock %}
+
+</head>
+<body>
+    {% block header %}
+        <a href="{% url 'status_all_days' %}">Status all days</a>
+        <a href="{% url 'detail_status_all_days' %}"> Detail status all days</a>
+        <a href="{% url 'duration_vs_days' %}">Duration with days</a>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
